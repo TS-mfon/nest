@@ -74,6 +74,44 @@ values
   )
 on conflict (id) do nothing;
 
+insert into starter_workflows (id, title, summary, cta, thesis, signal_id)
+values
+  (
+    '50000000-0000-0000-0000-000000000001',
+    'Load the travel fund plan',
+    'Open a beginner-friendly Nest plan that routes a travel goal into a conservative Mantle savings basket.',
+    'Build this plan',
+    'Nest starts with a simple goal: protect the travel fund while still earning yield. The plan stays readable, liquid, and easy to explain to a first-time on-chain user.',
+    '20000000-0000-0000-0000-000000000001'
+  ),
+  (
+    '50000000-0000-0000-0000-000000000002',
+    'Open the emergency vault milestone',
+    'Use a seeded milestone journey that suggests topping up an emergency reserve instead of forcing a risky rebalance.',
+    'Use this milestone',
+    'The milestone system guides the user toward safety first. Instead of adding complexity, Nest turns progress into a clear next contribution toward a more resilient emergency reserve.',
+    '20000000-0000-0000-0000-000000000002'
+  )
+on conflict (id) do nothing;
+
+insert into alert_rules (id, user_id, channel, condition, is_enabled)
+values
+  (
+    '60000000-0000-0000-0000-000000000001',
+    '00000000-0000-0000-0000-000000000002',
+    'email',
+    'Send a milestone note when the goal vault reaches 60% of its target.',
+    true
+  ),
+  (
+    '60000000-0000-0000-0000-000000000002',
+    '00000000-0000-0000-0000-000000000002',
+    'telegram',
+    'Alert when a follow-up funding prompt is ready for the active plan.',
+    true
+  )
+on conflict (id) do nothing;
+
 insert into audit_logs (id, actor_email, action, target_type, target_id, reason)
 values
   (

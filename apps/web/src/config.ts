@@ -29,18 +29,18 @@ export const appConfig: AppConfig = {
     adminController: "0x7A234ee08595873E4cfF9fE8F07C336F9F92e44D"
   },
   theme: {
-    bg: "#081114",
-    surface: "rgba(16, 23, 26, 0.78)",
-    surfaceStrong: "rgba(22, 30, 34, 0.96)",
-    line: "rgba(171, 255, 226, 0.12)",
-    text: "#f7fffd",
-    muted: "#9fb8b1",
-    accent: "#96ffe2",
-    accentSoft: "rgba(150, 255, 226, 0.12)",
-    accentStrong: "#59f1c0",
-    glowA: "rgba(89, 241, 192, 0.16)",
-    glowB: "rgba(255, 242, 163, 0.14)",
-    gradient: "linear-gradient(135deg, #96ffe2 0%, #fff2a3 100%)"
+    bg: "#0b1214",
+    surface: "rgba(18, 25, 28, 0.8)",
+    surfaceStrong: "rgba(24, 32, 35, 0.98)",
+    line: "rgba(140, 255, 223, 0.12)",
+    text: "#f6fffc",
+    muted: "#a7beb7",
+    accent: "#90ffd8",
+    accentSoft: "rgba(144, 255, 216, 0.12)",
+    accentStrong: "#4ce0a8",
+    glowA: "rgba(76, 224, 168, 0.18)",
+    glowB: "rgba(139, 225, 255, 0.12)",
+    gradient: "linear-gradient(135deg, #90ffd8 0%, #8be1ff 100%)"
   },
   heroStats: [
     { label: "Starter plans", value: "4" },
